@@ -1,0 +1,11 @@
+name: Greet New Contributors
+on: pull_request:
+types: [opened]
+jobs:
+greeting:
+runs-on: ubuntu-latest
+steps:
+- name: checkout code
+uses: actions/checkout@v2
+- name: Greet new contributor
+run: echo"Hello, welcome to the project! Thank you for your first pull request!"
